@@ -58,10 +58,10 @@ def pblm_10_03():
     printMagPhase("Y24", Y24)
     print('')
 
-    SP2 = V2_0.conjugate()*(Y21*V1_0 +Y22*V2_0 + Y23*V3_0 + Y24*V4_0)
-    printMagPhase("SP2", SP2)
-    print(SP2)
-    Q2 = SP2.imag
+    SP2_c = V2_0.conjugate()*(Y21*V1_0 +Y22*V2_0 + Y23*V3_0 + Y24*V4_0)
+    printMagPhase("SP2_conj", SP2_c)
+    print(SP2_c)
+    Q2 = -SP2_c.imag
     print(f'Q2 = {Q2:.4f}')
 
     V1_1 = V1_0
